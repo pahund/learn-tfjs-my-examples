@@ -1,4 +1,4 @@
-import * as tf from "@tensorflow/tfjs-node-gpu";
+import * as tf from "@tensorflow/tfjs-node";
 import fs from "fs";
 
 const bigMess = tf.randomUniform([400, 400, 3], 0, 255);

@@ -1,4 +1,4 @@
-import * as tf from '@tensorflow/tfjs-node-gpu';
+import * as tf from '@tensorflow/tfjs-node';
 import * as fs from 'fs';
 import * as path from 'path';
 import * as mobilenet from '@tensorflow-models/mobilenet';
@@ -22,4 +22,5 @@ const imageFileName = 'banana.png';
   console.log(`Predictions:\n${JSON.stringify(predictions, null, 4)}`); // PH_TODO
 
   tensor.dispose();
+  model.dispose();
 })();

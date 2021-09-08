@@ -3,19 +3,23 @@
   "version": "1.0.0",
   "description": "Patrick's examples developed while reading Gant Laborde's book “Learning TensorFlow.js”",
   "scripts": {
-    "watch": "nodemon",
-    "once": "ts-node"
+    "watch": "TF_CPP_MIN_LOG_LEVEL=1 nodemon",
+    "once": "TF_CPP_MIN_LOG_LEVEL=1 ts-node"
   },
   "devDependencies": {
     "nodemon": "^2.0.12",
     "prettier": "^2.3.2",
     "ts-node": "^10.2.1",
-    "typescript": "^4.4.2"
+    "typescript": "^4.4.2",
+    "@types/node": "^16.7.13"
   },
   "dependencies": {
     "@tensorflow-models/mobilenet": "^2.1.0",
     "@tensorflow/tfjs": "^3.9.0",
-    "@tensorflow/tfjs-node-gpu": "^3.9.0"
+    "@tensorflow/tfjs-node": "^3.9.0",
+    "@tensorflow/tfjs-converter": "^3.9.0",
+    "@tensorflow/tfjs-core": "^3.9.0",
+    "seedrandom": "^3.0.5"
   },
   "keywords": [
     "TensorFlow.js"
